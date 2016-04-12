@@ -13,6 +13,12 @@
 		2E9D6C781CBCC1DC00361179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9D6C761CBCC1DC00361179 /* Main.storyboard */; };
 		2E9D6C7A1CBCC1DC00361179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E9D6C791CBCC1DC00361179 /* Assets.xcassets */; };
 		2E9D6C7D1CBCC1DC00361179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9D6C7B1CBCC1DC00361179 /* LaunchScreen.storyboard */; };
+		2E9D6C861CBD10AD00361179 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D6C741CBCC1DC00361179 /* ViewController.m */; };
+		2E9D6C871CBD10AD00361179 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D6C711CBCC1DC00361179 /* AppDelegate.m */; };
+		2E9D6C881CBD10AD00361179 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D6C6E1CBCC1DC00361179 /* main.m */; };
+		2E9D6C8B1CBD10AD00361179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9D6C7B1CBCC1DC00361179 /* LaunchScreen.storyboard */; };
+		2E9D6C8C1CBD10AD00361179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E9D6C791CBCC1DC00361179 /* Assets.xcassets */; };
+		2E9D6C8D1CBD10AD00361179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9D6C761CBCC1DC00361179 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +32,19 @@
 		2E9D6C791CBCC1DC00361179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E9D6C7C1CBCC1DC00361179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E9D6C7E1CBCC1DC00361179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E9D6C911CBD10AD00361179 /* MultiTargetBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiTargetBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E9D6C921CBD10AD00361179 /* MultiTargetBeta-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MultiTargetBeta-Info.plist"; path = "/Users/pingguoilove/Documents/WorkSpace/Xcode/MultiTarget/MultiTargetBeta-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2E9D6C671CBCC1DC00361179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E9D6C891CBD10AD00361179 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				2E9D6C6A1CBCC1DC00361179 /* MultiTarget.app */,
+				2E9D6C911CBD10AD00361179 /* MultiTargetBeta.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +82,7 @@
 				2E9D6C791CBCC1DC00361179 /* Assets.xcassets */,
 				2E9D6C7B1CBCC1DC00361179 /* LaunchScreen.storyboard */,
 				2E9D6C7E1CBCC1DC00361179 /* Info.plist */,
+				2E9D6C921CBD10AD00361179 /* MultiTargetBeta-Info.plist */,
 				2E9D6C6D1CBCC1DC00361179 /* Supporting Files */,
 			);
 			path = MultiTarget;
@@ -99,6 +116,23 @@
 			productReference = 2E9D6C6A1CBCC1DC00361179 /* MultiTarget.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2E9D6C841CBD10AD00361179 /* MultiTargetBeta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E9D6C8E1CBD10AD00361179 /* Build configuration list for PBXNativeTarget "MultiTargetBeta" */;
+			buildPhases = (
+				2E9D6C851CBD10AD00361179 /* Sources */,
+				2E9D6C891CBD10AD00361179 /* Frameworks */,
+				2E9D6C8A1CBD10AD00361179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiTargetBeta;
+			productName = MultiTarget;
+			productReference = 2E9D6C911CBD10AD00361179 /* MultiTargetBeta.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,6 +161,7 @@
 			projectRoot = "";
 			targets = (
 				2E9D6C691CBCC1DC00361179 /* MultiTarget */,
+				2E9D6C841CBD10AD00361179 /* MultiTargetBeta */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +177,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E9D6C8A1CBD10AD00361179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9D6C8B1CBD10AD00361179 /* LaunchScreen.storyboard in Resources */,
+				2E9D6C8C1CBD10AD00361179 /* Assets.xcassets in Resources */,
+				2E9D6C8D1CBD10AD00361179 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -152,6 +197,16 @@
 				2E9D6C751CBCC1DC00361179 /* ViewController.m in Sources */,
 				2E9D6C721CBCC1DC00361179 /* AppDelegate.m in Sources */,
 				2E9D6C6F1CBCC1DC00361179 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E9D6C851CBD10AD00361179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9D6C861CBD10AD00361179 /* ViewController.m in Sources */,
+				2E9D6C871CBD10AD00361179 /* AppDelegate.m in Sources */,
+				2E9D6C881CBD10AD00361179 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MultiTarget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tuotuonet.KEDOUINCBETA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuotuonet.MULTITARGET;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -276,7 +331,32 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MultiTarget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tuotuonet.KEDOUINCBETA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuotuonet.MULTITARGET;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2E9D6C8F1CBD10AD00361179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = "BETA=1";
+				INFOPLIST_FILE = "$(SRCROOT)/MultiTargetBeta-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuotuonet.MULTITARGETBETA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2E9D6C901CBD10AD00361179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/MultiTargetBeta-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuotuonet.MULTITARGETBETA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -300,6 +380,15 @@
 				2E9D6C831CBCC1DC00361179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+		};
+		2E9D6C8E1CBD10AD00361179 /* Build configuration list for PBXNativeTarget "MultiTargetBeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E9D6C8F1CBD10AD00361179 /* Debug */,
+				2E9D6C901CBD10AD00361179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
